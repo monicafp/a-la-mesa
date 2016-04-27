@@ -1,0 +1,27 @@
+.general-info-recipe-modal {
+  height: 240px;
+}
+
+.image-wrapper-recipes {
+  height: 240px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-wrapper-recipes > img {
+  width: 100%;
+  height: auto;
+}
+
+.recipe-colaborator-modal {
+  font-family: merriweather;
+}
+
+.recipe-source-modal {
+  font-family: merriweather;
+}
+
+.recipe-title-modal {
+  font-family: montserrat;
+  font-weight: bold;
+}

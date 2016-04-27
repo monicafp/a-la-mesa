@@ -1,0 +1,272 @@
+@font-face {
+  font-family: merriweather;
+  src: url(assets/fonts/Merriweather-Light.ttf);
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url(assets/fonts/Montserrat-Regular.ttf);
+}
+
+::-webkit-input-placeholder {
+  color: #d0cdfa;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+}
+
+div.checkbox {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+fieldset {
+  margin: 17px 10px;
+}
+
+i {
+  color: #FFFFFF;
+  font-size: larger;
+}
+
+ul > li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.active-brand {
+  border-bottom: thin solid #FFFFFF;
+}
+
+.btn-primary {
+  background-color: #013012;
+  background-image: none;
+  border-color: none;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #d0cdfa;
+  background-image: none;
+  border-color: none;
+  color: #013012;
+}
+
+.cd-form-bottom-message {
+  bottom: -68px;
+  font-size: 16px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.cd-form-bottom-message a {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  background-color: #E7E6F7;
+}
+
+.dropdown-menu > li > a {
+  font-family: merriweather;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+
+.footer-header {
+  color: #E7E6F7;
+  font-family: montserrat;
+  font-size: large;
+  margin-bottom: 20px;
+}
+
+.footer-header > span {
+  border-bottom: 3px solid #013008;
+  color: #E7E6F7;
+  padding-bottom: 10px;
+}
+
+.footer-li {
+  font-family: merriweather;
+  padding-left: 25px;
+}
+
+.footer-li > li {
+  display: block;
+  font-size: inherit;
+  text-align: left;
+}
+
+.form-control {
+  padding: 6px 30px;
+}
+
+.form-icon {
+  margin: 7px 0 0 8px;
+  position: absolute;
+}
+
+.header-height-helper {
+  height: 50vh!important;
+}
+
+.modal-content {
+  padding: 0 15px;
+}
+
+.navbar {
+  border: none;
+  margin-bottom: 0;
+}
+
+.navbar.navbar-default {
+  background-color: transparent;
+  background-image: none;
+}
+
+.navbar-brand {
+  animation: center;
+  display: flex;
+  padding: 0 15px 0 15px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .active {
+  border-bottom: medium solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #FFFFFF;
+  font-family: merriweather;
+}
+
+#a-la-mesa-logo {
+  height: 450px;
+}
+
+#brand-image-forks {
+  height: 45px;
+  padding-top: 5px;
+  width: 85px;
+}
+
+#brand-image-words {
+  height: 27px;
+  margin: 13px 0 0 2px;
+}
+
+#contact-footer {
+  color: #E7E6F7;
+  text-decoration: none;
+}
+
+#content {
+  background-color: #FAFDF6;
+  padding: 70px 0;
+}
+
+#dropdown-li {
+  background: transparent;
+  background-image: none;
+  color: #FFFFFF;
+}
+
+
+#footer {
+  background-color: #3A3E3B;
+  border-radius: 0px;
+  color: #FFFFFF;
+  padding: 50px 0 0 0;
+  text-align: center;
+}
+
+#footer-disclaimer {
+  background-color: rgba(0,0,0, 0.1);
+  color: #999;
+  margin-top: 80px;
+  padding: 10px 0;
+  text-align: left;
+}
+
+#footer-disclaimer p {
+  margin: 0;
+  font-size: smaller;
+}
+
+#formGroupExampleInput, #formGroupExampleInput2 {
+  padding-left: 30px;
+}
+
+#form-title {
+  font-family: merriweather;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#header-image-back {
+  align-items: center;
+  background-attachment: fixed;
+  background-image: url('../images/header-image.jpg');
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 79vh;
+  justify-content: center;
+  transition: .4s;
+  width: 100%;
+}
+
+#login {
+  margin-top: 8px;
+}
+
+#login-button {
+  background-color: #E7E6F7;
+  border: none;
+  border-radius: 5px;
+  color: #013008;
+  font-family: merriweather;
+  font-size: medium;
+  padding: 6px 47px;
+}
+
+#login-button:focus {
+  outline: 0;
+}
+
+#login-button-modal {
+  margin-bottom: 17px;
+}
+
+#login-button-modal:focus, #login-button-modal:hover, {
+  background-color: #E7E6F7;
+  color: #013008;
+}
+
+#myModal {
+  font-family: merriweather;
+}
+
+#pre-footer {
+  background-color: #3A3E3B;
+  padding: 40px 0;
+}
+
+#search-box {
+  font-family: merriweather;
+}
+
+#search-button:focus {
+  outline: 0;
+}

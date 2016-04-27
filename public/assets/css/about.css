@@ -1,0 +1,26 @@
+@font-face {
+  font-family: merriweather;
+  src: url(assets/fonts/Merriweather-Light.ttf);
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url(assets/fonts/Montserrat-Regular.ttf);
+}
+
+h2 {
+  color: #013008;
+  font-family: montserrat;
+  text-align: center;
+}
+
+p {
+  font-family: merriweather;
+}
+
+.flex-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

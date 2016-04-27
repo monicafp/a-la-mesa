@@ -1,0 +1,12 @@
+label {
+  font-family: montserrat;
+  font-size: larger;
+}
+
+input, textarea, option, button {
+  font-family: merriweather;
+}
+
+#recipe-form-submit {
+  margin-top: 20px;
+}

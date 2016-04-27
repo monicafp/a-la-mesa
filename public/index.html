@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A la mesa</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/todas.css">
+  <link rel="stylesheet" href="assets/css/recipe-form.css">
+  <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/js/myfirebase.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+</head>
+
+<body>
+  <!-- Begin Login Modal -->
+  <div id="myModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div id="modal-login">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <!-- log in form -->
+          <form>
+            <h2 id="form-title">Login</h2>
+            <fieldset class="form-group">
+              <img class="form-icon" alt="" src="assets/images/cd-icon-email.svg" alt="" />
+              <input type="text" class="form-control form-input" id="login-email" placeholder="Correo electrónico">
+            </fieldset>
+            <fieldset class="form-group">
+              <img class="form-icon" src="assets/images/cd-icon-password.svg" alt="" />
+              <input type="password" class="form-control form-input" id="login-password" placeholder="Contraseña">
+            </fieldset>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value=""> Recordar mi contraseña
+              </label>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item">
+                <button id="login-button-modal" type="submit" class="btn btn-primary">Ingresar</button>
+              </div>
+            </div>
+          </form>
+          <!-- end login form -->
+          <p class="cd-form-bottom-message"><a href="#0">¿Olvidaste tu contraseña?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Login Modal -->
+
+  <!-- Begin Header -->
+  <header>
+    <nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="brand" class="navbar-brand" href="#"><img id="brand-image-forks" src="assets/images/a-la-mesa-cross.svg" alt="" /><img id="brand-image-words" src="assets/images/a-la-mesa-words.svg" alt="" /></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a id="dropdown-li" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Recetas <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" id="desayuno">Desayuno</a></li>
+                <li><a href="#" id="almuerzo-cena">Almuerzo y Cena</a></li>
+                <li><a href="#" id="postre">Postre</a></li>
+                <li><a href="#" id="bebidas">Bebidas</a></li>
+              </ul>
+            </li>
+            <li><a href="#" id="about">Sobre nosotros</a></li>
+            <li><a href="#" id="contact">Contactar</a></li>
+            <li id="login" class="nav navbar-nav">
+              <button id="login-button" type="button" data-toggle="modal" data-target="#myModal">Login</button>
+            </li>
+            <li>
+              <form class="navbar-form" role="search">
+                <div class="form-group">
+                  <input id="search-box" type="text" class="form-control" placeholder="Buscar">
+                </div>
+                <button id="search-button" type="submit" class="btn"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <section id="header-image-back">
+      <img id="a-la-mesa-logo" src="assets/images/a-la-mesa-logo-final.svg" alt="" />
+    </section>
+  </header>
+  <!-- End Header -->
+
+
+  <!-- Start Main Content Container -->
+  <main id="content">
+  </main>
+  <!-- End Main Content Container -->
+
+
+  <!-- Begin Footer -->
+  <footer id="footer" class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 col-md-offset-2 col-xs-4">
+          <div class="footer-header"><span>Recetas recientes</span></div>
+          <ul class="footer-li footer-recetas-recientes">
+  <!--          <li>Receta 1</li>
+            <li>Receta 2</li>
+            <li>Receta 3</li>  -->
+          </ul>
+        </div>
+        <div class="col-md-2 col-md-offset-1 col-xs-4">
+          <div class="footer-header"><span>Top colaboradores</span></div>
+          <ul class="footer-li">
+            <li>Mónica Fornaris Pau</li>
+            <li>Johnny Mejías</li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-md-offset-1 col-xs-4">
+          <div class="footer-header">
+            <span><a href="#" id="contact-footer">Contactar</a></span>
+          </div>
+        </div>
+      </div>
+      <div id="footer-disclaimer" class="row">
+        <div class="col-xs-12">
+          <p>
+            <strong><em>A la mesa</em></strong> no reclama autoría sobre ninguna de las recetas mostradas en esta página. Se le dará crédito a cada autor junto a cada receta.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: merriweather;
+  src: url(assets/fonts/Merriweather-Light.ttf);
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url(assets/fonts/Montserrat-Regular.ttf);
+}
+
+::-webkit-input-placeholder {
+  color: #013008;
+}
+
+h2 {
+  font-family: montserrat;
+  text-align: left;
+}
+
+p {
+  font-family: merriweather;
+  font-size: medium;
+  margin-bottom: 35px;
+}
+
+span {
+  color: #013008;
+}
+
+.input-text {
+  height: 45px;
+  width: 200px;
+}
+
+#form {
+  margin: 35px 0 50px 0;
+}
+
+#send-button {
+  background-color: #E7E6F7;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  height: 45px;
+  width: 150px;
+}
+
+#send-button:hover {
+  background-color: #013008;
+  color: #E7E6F7;
+}
+
+#text {
+  margin-top: 50px;
+}
