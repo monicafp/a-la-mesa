@@ -12,7 +12,7 @@ $(document).ready(function() {
       $('#navigation').css('background-color', 'transparent');
     };
     $('#brand-image-words').hide();
-    buildRecipies();
+    buildRecipes();
     buildRecipesFooter();
   });
 
@@ -33,7 +33,7 @@ $(document).ready(function() {
       $('#content').html(data);
       $('#header-image-back').removeClass('header-height-helper');
       percent = 0.73;
-      buildRecipies();
+      buildRecipes();
       buildRecipesFooter();
     });
   });
@@ -45,16 +45,6 @@ $(document).ready(function() {
       percent = 0.43;
     });
   });
-
-/*
-  $('#dropdown-li').on('click', function() {
-    $.get('todas.html', function(data) {
-      $('#content').html(data);
-      $('#header-image-back').addClass('header-height-helper');
-      percent = 0.43;
-    });
-  });
-*/
 
   $('#desayuno').on('click', function() {
     $.get('todas.html', function(data) {
@@ -175,7 +165,7 @@ $(document).ready(function() {
     return html;
   }
 
-  buildRecipies = function() {
+  buildRecipes = function() {
     $('.recipes-row').html('');
     var recipeHtmlList = [];
     var recipesQuery = dataRef.limitToLast(6);
@@ -208,7 +198,7 @@ $(document).ready(function() {
     }, function(error) {
       console.log('Read failed: ', error.code);
     });
-  };
+  }
 
   recipeHtmlTodasItem = function(recipe) {
     var html = "<div class=\"col-md-3 col-sm-6 col-xs-12 recipe-container-todas\"> <div class=\"image-wrapper-recipes-todas\"> <a data-toggle=\"modal\" data-target=\"#test-modal-receta\" href=\"#\"><div class=\"wrapper-overflow\"><img src=\"" + recipe.photo_url + "\" /> </div> <h4 class=\"recipe-title-todas\">" + recipe.title + "</h4></a> <p class=\"recipe-upload-date\"> " + recipe.date + " </p> </div> </div>";
@@ -235,28 +225,5 @@ $(document).ready(function() {
       console.log('Read failed: ', error.code);
     });
   }
-
-  /// trials for dropdown issue on mobile view
-
-
-  //  if ($(window).width() < 768) {
-  //    $('.navbar-nav li a').on('click', function(){
-  //       $('.navbar-collapse').addClass('in');
-  //       });
-  //         $('.navbar-nav li a').on('click', function(){
-  //            $('.navbar-collapse').removeClass('in')
-  //         });
-  //    } else {
-  //    };
-
-
-  //    $('#dropdown-li').on('click', function(){
-  //        $('#dropdown-li').attr('aria-expanded', 'true');
-  //      $('li.dropdow').addClass('open');
-  //      });
-
-
-
-  /// end trials for dropdown issue on mobile view
 
 });
