@@ -1,11 +1,11 @@
 @font-face {
   font-family: merriweather;
-  src: url(assets/fonts/Merriweather-Light.ttf);
+  src: url(../fonts/Merriweather-Light.ttf);
 }
 
 @font-face {
   font-family: montserrat;
-  src: url(assets/fonts/Montserrat-Regular.ttf);
+  src: url(../fonts/Montserrat-Regular.ttf);
 }
 
 ::-webkit-input-placeholder {
