@@ -29,3 +29,8 @@ p {
   justify-content: center;
   width: 100%;
 }
+
+#hay-fiesta-gif {
+  height: auto;
+  width: 50%;
+}

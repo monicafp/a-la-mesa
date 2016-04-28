@@ -7,7 +7,7 @@ $(document).ready(function() {
     $('#content').html(data);
     $('#search-box').hide();
     if ($(window).width() < 768) {
-      $('#navigation').css('background-color', '#013008');
+      $('#navigation').css('background-color', 'black');
     } else {
       $('#navigation').css('background-color', 'transparent');
     };
@@ -18,7 +18,7 @@ $(document).ready(function() {
 
   $(window).resize(function() {
     if ($(window).width() < 768) {
-      $('#navigation').css('background-color', '#013008');
+      $('#navigation').css('background-color', 'black');
     } else {
       if (!($(window).scrollTop() > ($(window).height() * percent))) {
         $('#navigation').css('background-color', 'transparent');
@@ -102,7 +102,7 @@ $(document).ready(function() {
   // Events that need to be listened upon change
   $(window).scroll(function() {
     if ($(window).scrollTop() > ($(window).height() * percent)) {
-      $('#navigation').css('background-color', '#013008');
+      $('#navigation').css('background-color', 'black');
       $('#brand-image-words').show();
     } else {
       if ($(window).width() > 768) {
@@ -129,6 +129,10 @@ $(document).ready(function() {
   $('#brand, #desayuno, #almuerzo-cena, #postre, #bebidas, #about, #contact').on('click', function() {
     $('.navbar-collapse').removeClass('in');
    });
+
+  $('#dropdown-li').on('click', function() {
+    $('.dropdown-li').removeClass('active');
+  });
 
   $('#search-button').on('click', function(e) {
     e.preventDefault();

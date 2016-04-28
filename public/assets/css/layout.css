@@ -166,6 +166,7 @@ ul > li {
 #brand-image-words {
   height: 27px;
   margin: 13px 0 0 2px;
+  width: auto;
 }
 
 #contact-footer {
