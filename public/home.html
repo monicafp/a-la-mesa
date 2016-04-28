@@ -1,4 +1,97 @@
-<div id="modal-content"></div>
+<!-- <div id="modal-content"></div> -->
+<div id="test-modal-receta" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="recipe-title-modal">
+              <h3>Rustic Key Lime Tarts</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-xs-12" id="foto-receta-modal">
+            <div class="image-wrapper-recipe-modal">
+              <img src="assets/images/1-rustic-key-lime-tarts.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-12" class="general-info-recipe-modal">
+            <div class="recipe-colaborator-modal">
+              Colaborador(a): Mónica Fornaris Pau
+            </div>
+            <div class="recipe-source-modal">
+              Source: <a target="_blank" href="http://idlewife.blogspot.com/2011/02/rustic-key-lime-tarts.html">Idle Wife</a>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="ingredientes">
+          <div class="col-xs-12">
+            <h4>Ingredientes</h4>
+            <p>
+              Crust:
+              <br> 1 1/2 cup honey graham cracker crumbs
+              <br> 1/4 cup sugar
+              <br> zest from one lime
+              <br> 90 mls or 6 tablespoons salted margarine, melted
+              <br>
+              <br> Filling:
+              <br> 2 egg yolks
+              <br> 1 can fat free/low fat sweetened condensed milk
+              <br> 1/2 cup key lime juice (the equivalent of exactly one pound of key limes)
+            </p>
+          </div>
+        </div>
+        <div class="row" id="procedimiento">
+          <div class="col-xs-12">
+            <h4>Procedimiento</h4>
+            <p>
+              Crust:
+              <br> 1. Crush the zest throughout the sugar.
+              <br> 2. Combine the crumbs, sugar, and lime zest
+              <br> 3. Mix in the melted butter until everything is evenly moist.
+              <br> 4. Butter a 12 cup nonsick muffin tin.
+              <br> 4. Take the crumbs and divide them as equally as you can into the muffin tin.
+              <br> 5. Using a cup that approximately fits the bottom of the tin, push the crumbs down to the bottom. Kind of wiggle the cup around so the crumbs go up the sides a bit. Get your fingers involved if you need to.
+              <br> 6. Bake in a 350 degree oven for about 10 minutes (mine puffed up and freaked me out, but they settled back down when they came out). Allow to cool.
+              <br>
+              <br> Filling:
+              <br> 1. Mix the condensed milk and egg yolks together until combined. Add the lime juice and stir to combine. It will thicken up almost instantly.
+              <br> 2. Pour about 1/2 cup of batter into each graham cracker cup.
+              <br> 3. Cook at 350 for 15 minutes.
+              <br> 4. Cool and chill in the fridge for about an hour.
+              <br>
+            </p>
+          </div>
+        </div>
+        <div class="row" id="comentarios-receta">
+          <div class="col-xs-12">
+            <h4>Comentarios</h4>
+            <p>
+            </p>
+          </div>
+        </div>
+        <div class="row" id="tags-receta">
+          <div class="col-xs-12">
+            <h4>Tag</h4>
+            <p>
+              Postres
+            </p>
+          </div>
+        </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.modal-content -->
+</div>
+<!-- /.modal-dialog -->
+</div>
+<!--  End Recipe Modal -->
 
 <div class="container">
   <div class="row">
@@ -17,7 +110,7 @@
         <div class="row">
           <div class="col-xs-6">
             <div class="image-wrapper-favorites">
-              <img src="assets/images/1-rustic-key-lime-tarts.jpg" alt="Key Lime Tarts" />
+              <img data-toggle="modal" data-target="#test-modal-receta" src="assets/images/1-rustic-key-lime-tarts.jpg" alt="Key Lime Tarts" />
             </div>
           </div>
           <div class="col-xs-6 favorites-section-recipe-title">
