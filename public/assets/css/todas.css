@@ -48,7 +48,7 @@ button.btn.btn-default:hover {
 
 .recipes-todas .recipe-container-todas .image-wrapper-recipes-todas {
   height: 250px;
-  width: 250px;
+  width: 100%;
 }
 
 .recipes-todas .recipe-container-todas .image-wrapper-recipes-todas > a {
