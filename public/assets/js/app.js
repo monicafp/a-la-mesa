@@ -205,7 +205,7 @@ $(document).ready(function() {
   }
 
   recipeHtmlTodasItem = function(recipe) {
-    var html = "<div class=\"col-md-3 col-sm-6 col-xs-12 recipe-container-todas\"> <div class=\"image-wrapper-recipes-todas\"> <a data-toggle=\"modal\" data-target=\"#test-modal-receta\" href=\"#\"><div class=\"wrapper-overflow\"><img src=\"" + recipe.photo_url + "\" /> </div> <h4 class=\"recipe-title-todas\">" + recipe.title + "</h4></a> <p class=\"recipe-upload-date\"> " + recipe.date + " </p> </div> </div>";
+    var html = "<div class=\"col-md-3 col-sm-6 col-xs-12 recipe-container-todas\"> <div class=\"image-wrapper-recipes-todas\"> <a data-toggle=\"modal\" data-target=\"#test-modal-receta\" href=\"#\"><div class=\"wrapper-overflow\"><img src=\"" + recipe.photo_url + "\" /> </div> <h4 class=\"recipe-title-todas\">" + recipe.title + "</h4></a> </div> </div>";
     return html;
   }
 
