@@ -274,3 +274,9 @@ ul > li {
 #search-button:focus {
   outline: 0;
 }
+
+#source {
+  align-self: baseline;
+  display: flex;
+  justify-content: flex-end;
+}
