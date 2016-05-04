@@ -279,4 +279,6 @@ ul > li {
   align-self: baseline;
   display: flex;
   justify-content: flex-end;
+  margin-top: -26px;
+  padding: 0 7px 0 0;
 }
