@@ -282,3 +282,11 @@ ul > li {
   margin-top: -26px;
   padding: 0 7px 0 0;
 }
+
+#source a {
+  color: #FFFFFF;
+}
+
+#source p {
+  margin-bottom: 0px;
+}
