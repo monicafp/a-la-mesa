@@ -112,7 +112,7 @@ $(document).ready(function() {
     }
   });
 
-  $('.navbar-nav li a, #brand').on('click', function() {
+  $('.navbar-nav li a, #brand-image-forks').on('click', function() {
     $('.active').removeClass('active');
     $(this).toggleClass('active');
   });
